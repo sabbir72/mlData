@@ -1,0 +1,7 @@
+path: datasets/activity_train_data_v10.1
+train: train/images
+val: valid/images
+test: valid/images
+
+nc: 2
+names: ['get_put', 'sewing']

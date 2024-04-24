@@ -1,0 +1,13 @@
+services:
+  postgresql:
+    image: docker.io/bitnami/postgresql:16
+    ports:
+      - '5432:5432'
+    volumes:
+      - 'PostgreSQL_DB:/bitnami/postgresql'
+    environment:
+      - 'ALLOW_EMPTY_PASSWORD=yes'
+
+volumes:
+  PostgreSQL_DB:
+    driver: local
